@@ -1,13 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Prosto+One&family=Russo+One&display=swap');
+
 body {
+  background-color: #333;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lobster', cursive, 'Pacifico', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  transition: color 0.5s, text-shadow 0.5s;
 }
+
+nav:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.social-icons a:hover {
+  color: rgb(86, 247, 126);
+}
+
+.card-wrapper {
+  perspective: 1000px; /* Add perspective */
+  transform-style: preserve-3d; /* Enable 3D children */
+}
+
+.card-wrapper > div {
+  transform: rotateX(15deg) rotateY(15deg); /* Rotate the card */
+  transition: transform 0.5s; /* Add a transition for the transformation */
+}
+
+.card-wrapper:hover > div {
+  transform: rotateX(0) rotateY(0); /* Reset the rotation on hover */
+}
+
+.card1 {
+  background-image: url('./assets/card1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card2 {
+  background-image: url('./assets/card2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card3 {
+  background-image: url('./assets/card1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background-image: url('./assets/card2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  background-image: url('./assets/card1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  background-image: url('./assets/card2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  height: 280px;
+  margin: 8px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
