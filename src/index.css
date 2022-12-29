@@ -27,6 +27,7 @@ nav:hover {
   color: rgb(86, 247, 126);
 }
 
+
 .card-wrapper {
   perspective: 1000px; /* Add perspective */
   transform-style: preserve-3d; /* Enable 3D children */
