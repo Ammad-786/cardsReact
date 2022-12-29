@@ -5,8 +5,8 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 const Navbar = () => {
 
   return (
-    <div>
-        <nav  className="bg-black p-4 md:p-6 flex md:flex-col items-center justify-between border-b-2 border-white  md:justify-center">
+    <div className='bg-gray-800 shadow-md fixed w-full z-10 top-0'>
+        <nav  className="bg-black  p-4 md:p-6 flex md:grid md:grid-cols-3 md: items-center justify-between border-b-2 border-white  md:justify-center">
             <div className=" flex  text-2xl text-white justify-center">NEEDLE CUTS</div>
             <div className="md:hidden">
                 <button className="text-gray-500 hover:text-white focus:text-white focus:outline-none">

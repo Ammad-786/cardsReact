@@ -27,7 +27,6 @@ nav:hover {
   color: rgb(86, 247, 126);
 }
 
-
 .card-wrapper {
   perspective: 1000px; /* Add perspective */
   transform-style: preserve-3d; /* Enable 3D children */
@@ -93,7 +92,42 @@ nav:hover {
 
 
 
+.cardaa-container {
+  perspective: 1000px;
+}
 
+.cardaa {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
 
+.cardaa.flipped {
+  transform: rotateY(180deg);
+}
 
+.cardaa-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
 
+.cardaa-front {
+  background-color: white;
+  color: black;
+}
+
+.cardaa-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.controls label {
+  display: block
+
+}
