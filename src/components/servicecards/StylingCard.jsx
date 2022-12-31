@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const StylingCard = () => {
   return (
     <motion.div className="relative rounded-lg shadow-lg border-4 border-green-400 bg-black hover:bg-white"
-      whileHover={{ scale: 1.05, rotateY: 20, rotateZ: 360 }}>
+      whileHover={{ scale: 1.05, rotateY: 20, rotateZ: 0 }}>
       {/* <img className="absolute top-0 h-full w-full object-cover rounded-t-lg" src={stylingbg} alt="Styling" /> */}
       <motion.div className="relative px-4 py-6 text-white hover:text-black"
         whileHover={{ scale: 1.05, rotateY: 20 }}>
