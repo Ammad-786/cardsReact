@@ -20,8 +20,8 @@ const Home = () => {
   }
   
   return (
-    <div id="home">
-       <div className=" bg-[#333]  md:h-screen py-14 md:p-20 mx-auto flex flex-col items-center justify-center">
+    <div id='home' className="bg-image">
+       <div className="  md:h-screen py-14 md:p-20 mx-auto flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold text-center text-white">Welcome to the Salon</h1>
           <p className="text-xl text-center text-[#b3b3b3] mb-8">We offer a wide range of beauty and hair services</p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-8">

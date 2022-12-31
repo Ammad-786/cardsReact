@@ -27,6 +27,15 @@ nav:hover {
   color: rgb(86, 247, 126);
 }
 
+.bg-image {
+  background-image: url('./assets/shop.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
 .card-wrapper {
   perspective: 1000px; /* Add perspective */
   transform-style: preserve-3d; /* Enable 3D children */

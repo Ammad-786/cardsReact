@@ -5,8 +5,8 @@ import ColorCard from './servicecards/ColorCard';
 
 const Services = () => {
   return (
-    <div>
-        <div className="container flex flex-col mx-auto p-20 items-center text-center text-white justify-center ">
+    <div className='bg-image'>
+        <div className="container md:h-screen flex flex-col mx-auto p-20 items-center text-center text-white justify-center ">
             <h1 className="text-2xl font-bold mt-12 mb-6">Our Services</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <HaircutsCard />

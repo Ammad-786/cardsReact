@@ -3,7 +3,8 @@ import React from 'react';
 const Contact= () => {
 
     return (
-      <div className="container mx-auto  p-12 bg-black">
+    <div className='bg-black h-screen '> 
+      <div className="container mx-auto p-12 ">
             <div className="flex flex-wrap mx-auto justify-center text-center">
                 <div className="w-full md:w-1/2 px-4 py-6 border-2 border-white rounded-2xl">
                     <div className="card22">
@@ -50,6 +51,7 @@ const Contact= () => {
         </div>
         </div>
         </div>
+    </div>
     )
 }
 export default Contact
