@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../index.css"
 import { FaFacebookF, FaTwitter, FaInstagram, FaTimes } from 'react-icons/fa';
 
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,7 +28,7 @@ const Navbar = () => {
                 <a href="/" className="text-white font-bold px-4 py-2 rounded-lg hover:bg-gray-700">Contact</a>
             </div>
             <div className="social-icons hidden md:flex justify-center">
-                <a href="/"><FaFacebookF /></a>
+                <a href="https://www.facebook.com/"><FaFacebookF /></a>
                 <a href="/"><FaTwitter /></a>
                 <a href="/"><FaInstagram /></a>
             </div>

@@ -4,6 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 
 const Card1 = ({ onClose }) => {
   return (
+    
     <div className="card-about flex flex-col bg-white rounded-lg shadow-md gap-8 p-4">
       <h2 className="text-2xl font-bold mb-4">Our Team</h2>
           <p className="text-lg leading-loose mb-4">
@@ -104,22 +105,24 @@ const AnimatedCard2 = () => {
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-100 p-20 md:h-screen mx-auto items-center justify-center md:flex  md:flex-col ">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-4 text-center">Our Team</h2>
-        <p className="text-lg leading-loose mb-4 text-center">
-          Our team of experienced stylists is dedicated to providing the best service to our clients. Meet our team of professionals below:
-        </p>
-        <ul className="flex flex-wrap mx-auto justify-center">
-          <li className="w-1/2 px-2 mb-4 ">
-            <AnimatedCard1 />
-          </li>
-          <li className="w-1/2 px-2 mb-4">
-            <AnimatedCard2 />
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div id="about-us">
+      <section className="bg-gray-100 p-20 md:h-screen mx-auto items-center justify-center md:flex  md:flex-col ">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-4 text-center">Our Team</h2>
+          <p className="text-lg leading-loose mb-4 text-center">
+            Our team of experienced stylists is dedicated to providing the best service to our clients. Meet our team of professionals below:
+          </p>
+          <ul className="flex flex-wrap mx-auto justify-center">
+            <li className="w-1/2 px-2 mb-4 ">
+              <AnimatedCard1 />
+            </li>
+            <li className="w-1/2 px-2 mb-4">
+              <AnimatedCard2 />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   );
 };
 
