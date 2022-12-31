@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Services from './components/Services';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+// import AppointmentPage from './components/AppointmentPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home/>
       <AboutUs/>
       <Services/>
+      {/* <AppointmentPage/> */}
       <Contact/>
       <Footer/>
     </>

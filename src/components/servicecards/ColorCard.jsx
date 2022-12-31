@@ -6,7 +6,7 @@ const ColorCard = () => {
   return (
     <motion.div
       className="relative rounded-lg shadow-lg border-4 border-green-400 bg-black hover:bg-white"
-      whileHover={{ scale: 1.05, rotateY: 20, rotateZ: 360 }}>
+      whileHover={{ scale: 1.05, rotateY: 5, rotateZ: 60 }}>
       <motion.div className="relative px-4 py-6 z-10 bg-neon-green-500 text-white hover:text-black"
       whileHover={{ scale: 1.05, rotateY: 0, rotateX: 20  }}>
         <h2 className="text-2xl font-bold mb-2">Color</h2>

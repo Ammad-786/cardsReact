@@ -131,3 +131,13 @@ nav:hover {
   display: block
 
 }
+
+@media (min-width: 800px) {
+  .appointment-form {
+    width: 100%;
+  }
+}
+
+
+
+
