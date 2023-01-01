@@ -38,10 +38,6 @@ function AppointmentPage() {
     setMessage('Appointment successfully booked...!'); // update the message state when the form is submitted
     
   }
-  
-
-  
-
   return (
     <motion.div  initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-image flex flex-col items-center p-4">
       <h1 className="text-2xl font-bold mb-4">Book an Appointment</h1>
