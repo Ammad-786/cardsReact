@@ -15,7 +15,18 @@ const Home = () => {
   const stylists = ['Alice', 'Bob', 'Charlie', 'Diane'];
 
   const handleSubmit = (event) => {
+    console.log('handleSubmit function called');
     event.preventDefault();
+    console.log('selectedService:', selectedService);
+    console.log('selectedStylist:', selectedStylist);
+    console.log('appointmentTime:', appointmentTime);
+    console.log('appointmentNotes:', appointmentNotes);
+    console.log({
+      selectedService,
+      selectedStylist,
+      appointmentTime,
+      appointmentNotes,
+    });
     // save the appointment details to the database or some other backend service
   }
   

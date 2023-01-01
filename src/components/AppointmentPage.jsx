@@ -37,11 +37,11 @@ function AppointmentPage() {
   }
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center p-4">
+    <motion.div  initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-image flex flex-col items-center p-4">
       <h1 className="text-2xl font-bold mb-4">Book an Appointment</h1>
-      <form onSubmit={handleSubmit} className="w-full max-w-sm">
+      <form onSubmit={handleSubmit} className="w-full text-center max-w-sm">
                 <div className="mb-4">
-                  <label className="block font-bold mb-2 text-gray-700" htmlFor="selectedService">
+                  <label className="block font-bold mb-2 text-white" htmlFor="selectedService">
                     Service
                   </label>
                   <div className="relative">
@@ -64,7 +64,7 @@ function AppointmentPage() {
                   </div>
                 </div>
                 <div className="mb-4">
-          <label className="block font-bold mb-2 text-gray-700" htmlFor="selectedStylist">
+          <label className="block font-bold mb-2 text-white" htmlFor="selectedStylist">
             Stylist
           </label>
           <div className="relative">
@@ -87,7 +87,7 @@ function AppointmentPage() {
           </div>
         </div>
         <div className="mb-4">
-          <label className="block font-bold mb-2 text-gray-700" htmlFor="appointmentTime">
+          <label className="block font-bold mb-2 text-white" htmlFor="appointmentTime">
           Appointment Time
           </label>
           <input
@@ -101,7 +101,7 @@ function AppointmentPage() {
           />
           </div>
         <div className="mb-4">
-          <label className="block font-bold mb-2 text-gray-700" htmlFor="appointmentNotes">
+          <label className="block font-bold mb-2 text-white" htmlFor="appointmentNotes">
             Notes
           </label>
           <textarea
@@ -114,7 +114,7 @@ function AppointmentPage() {
           />
         </div>
         <div className="mb-4">
-          <label className="block font-bold mb-2 text-gray-700" htmlFor="appointmentName">
+          <label className="block font-bold mb-2 text-white" htmlFor="appointmentName">
           Name
           </label>
           <input
@@ -128,7 +128,7 @@ function AppointmentPage() {
           />
         </div>
         <div className="mb-4">
-          <label className="block font-bold mb-2 text-gray-700" htmlFor="phoneNumber">
+          <label className="block font-bold mb-2 text-white" htmlFor="phoneNumber">
             Phone Number
           </label>
           <input
@@ -142,7 +142,7 @@ function AppointmentPage() {
           />
         </div>
         <div className="mb-4">
-          <label className="block font-bold mb-2 text-gray-700" htmlFor="emailAddress">
+          <label className="block font-bold mb-2 text-white" htmlFor="emailAddress">
             Email Address
           </label>
           <input
