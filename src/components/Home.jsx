@@ -53,7 +53,7 @@ const Home = () => {
                 {showForm && (
                   <motion.form
                     initial={{ y: -100 }}
-                    animate={{ y: 0 }}
+                    animate={{ y: 40 }}
                     exit={{ y: 100 }}
                     className="appointment-form bg-white rounded-lg shadow-lg p-4 w-[280px] md:w-[280px] md:h-[390px] text-center"
                   >
