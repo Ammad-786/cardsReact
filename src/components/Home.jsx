@@ -15,18 +15,7 @@ const Home = () => {
   const stylists = ['Alice', 'Bob', 'Charlie', 'Diane'];
 
   const handleSubmit = (event) => {
-    console.log('handleSubmit function called');
     event.preventDefault();
-    console.log('selectedService:', selectedService);
-    console.log('selectedStylist:', selectedStylist);
-    console.log('appointmentTime:', appointmentTime);
-    console.log('appointmentNotes:', appointmentNotes);
-    console.log({
-      selectedService,
-      selectedStylist,
-      appointmentTime,
-      appointmentNotes,
-    });
     // save the appointment details to the database or some other backend service
   }
   
@@ -64,7 +53,7 @@ const Home = () => {
                 {showForm && (
                   <motion.form
                     initial={{ y: -100 }}
-                    animate={{ y: 40 }}
+                    animate={{ y: 0 }}
                     exit={{ y: 100 }}
                     className="appointment-form bg-white rounded-lg shadow-lg p-4 w-[280px] md:w-[280px] md:h-[390px] text-center"
                   >

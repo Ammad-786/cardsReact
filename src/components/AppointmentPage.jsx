@@ -9,6 +9,7 @@ function AppointmentPage() {
   const [appointmentName, setAppointmentName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
+  const [message, setMessage] = useState(''); // add this line to add the message state
 
   // list of available services and stylists for the salon
   const services = ['Haircut', 'Color', 'Blowout', 'Updo'];
@@ -34,7 +35,12 @@ function AppointmentPage() {
       emailAddress
     });
     // save the appointment details to the database or some other backend service
+    setMessage('Appointment successfully booked...!'); // update the message state when the form is submitted
+    
   }
+  
+
+  
 
   return (
     <motion.div  initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-image flex flex-col items-center p-4">
@@ -158,7 +164,9 @@ function AppointmentPage() {
         <button type="submit" className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
           Book Appointment
         </button>
+        
       </form>
+      {message && <p className="text-center bg-black rounded-2xl text-white border-2 border-white p-4 mt-4">{message}</p>} {/* show the message if it exists */}
     </motion.div>
   );
 }
